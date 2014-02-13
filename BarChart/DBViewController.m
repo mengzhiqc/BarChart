@@ -19,10 +19,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     NSArray *itemData = @[
-                          @{@"itemName":@"吃饭",@"value":@"5"},
-                          @{@"itemName":@"睡觉",@"value":@"6"},
-                          @{@"itemName":@"鲜花",@"value":@"8"},
-                          @{@"itemName":@"礼品",@"value":@"2"},
+                          @{@"itemName":@"Flower",@"value":@"5"},
+                          @{@"itemName":@"Book",@"value":@"6"},
+                          @{@"itemName":@"Bus",@"value":@"8"},
+                          @{@"itemName":@"Others",@"value":@"2"},
                           ];
     DBBarChartView *barChartView = [[DBBarChartView alloc]initWithData:itemData frame:CGRectMake(0, 20, 280, 100)];
     barChartView.delegate = self;
@@ -53,7 +53,7 @@
 
 - (CGFloat)widthOfBarCharView:(DBBarChartView *)barCharView
 {
-    return 30.0f;
+    return 50.0f;
 }
 
 @end
