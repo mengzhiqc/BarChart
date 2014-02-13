@@ -21,6 +21,7 @@
 		8A000AF218AC80BF0004476A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A000AD418AC80BF0004476A /* UIKit.framework */; };
 		8A000AFA18AC80BF0004476A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A000AF818AC80BF0004476A /* InfoPlist.strings */; };
 		8A000AFC18AC80BF0004476A /* BarChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A000AFB18AC80BF0004476A /* BarChartTests.m */; };
+		8A000B0B18AD2DDB0004476A /* DBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A000B0A18AD2DDB0004476A /* DBBarChartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8A000AF718AC80BF0004476A /* BarChartTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BarChartTests-Info.plist"; sourceTree = "<group>"; };
 		8A000AF918AC80BF0004476A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8A000AFB18AC80BF0004476A /* BarChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarChartTests.m; sourceTree = "<group>"; };
+		8A000B0918AD2DDB0004476A /* DBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBBarChartView.h; sourceTree = "<group>"; };
+		8A000B0A18AD2DDB0004476A /* DBBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBBarChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		8A000AD618AC80BF0004476A /* BarChart */ = {
 			isa = PBXGroup;
 			children = (
+				8A000B0818AD2DDB0004476A /* libs */,
 				8A000ADF18AC80BF0004476A /* DBAppDelegate.h */,
 				8A000AE018AC80BF0004476A /* DBAppDelegate.m */,
 				8A000AE218AC80BF0004476A /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				8A000AF818AC80BF0004476A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A000B0818AD2DDB0004476A /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				8A000B0918AD2DDB0004476A /* DBBarChartView.h */,
+				8A000B0A18AD2DDB0004476A /* DBBarChartView.m */,
+			);
+			path = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 				8A000AE118AC80BF0004476A /* DBAppDelegate.m in Sources */,
 				8A000AE718AC80BF0004476A /* DBViewController.m in Sources */,
 				8A000ADD18AC80BF0004476A /* main.m in Sources */,
+				8A000B0B18AD2DDB0004476A /* DBBarChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +399,7 @@
 				GCC_PREFIX_HEADER = "BarChart/BarChart-Prefix.pch";
 				INFOPLIST_FILE = "BarChart/BarChart-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -398,6 +413,7 @@
 				GCC_PREFIX_HEADER = "BarChart/BarChart-Prefix.pch";
 				INFOPLIST_FILE = "BarChart/BarChart-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

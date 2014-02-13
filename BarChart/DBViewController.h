@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBBarChartView.h"
 
-@interface DBViewController : UIViewController
+
+@interface DBViewController : UIViewController<BarChartViewDelegate>
 
 @end
