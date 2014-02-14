@@ -47,9 +47,11 @@ please don't forget to add `BarChartViewDelegate` in your header file.
 
 * we have provided some delegate so that you can change color and some other properties of chart view
 
-    - (UIColor *)colorOfGraphicBarWithbarChartView:(DBBarChartView *)barChartView ;
-    - (UIColor *)colorOfDataLabelWithbarChartView:(DBBarChartView *)barChartView ;
-    - (UIColor *)colorOfDataNumWithbarChartView:(DBBarChartView *)barChartView ;
+<pre>
+    - (UIColor *)barColorOfChartView:(DBBarChartView *)barChartView ;
+    - (UIColor *)labelColorOfChartView:(DBBarChartView *)barChartView ;
+    - (UIColor *)numberLabelcolorOfChartView:(DBBarChartView *)barChartView ;
     - (CGFloat)widthOfBarCharView:(DBBarChartView *)charView;
+</pre>
 
 

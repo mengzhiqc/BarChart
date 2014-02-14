@@ -36,17 +36,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (UIColor *)colorOfGraphicBarWithbarChartView:(DBBarChartView *)barChartView
+- (UIColor *)barColorOfChartView:(DBBarChartView *)barChartView
 {
     return [UIColor blackColor];
 }
 
-- (UIColor *)colorOfDataNumWithbarChartView:(DBBarChartView *)barChartView
+- (UIColor *)numberLabelcolorOfChartView:(DBBarChartView *)barChartView
 {
     return [UIColor colorWithRed:0.6 green:0 blue:0.6 alpha:1.0];
 }
 
-- (UIColor *)colorOfDataLabelWithbarChartView:(DBBarChartView *)barChartView
+- (UIColor *)labelColorOfChartView:(DBBarChartView *)barChartView
 {
     return [UIColor grayColor];
 }

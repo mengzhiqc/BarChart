@@ -12,9 +12,9 @@
 @protocol BarChartViewDelegate <NSObject>
 
 @optional
-- (UIColor *)colorOfGraphicBarWithbarChartView:(DBBarChartView *)barChartView ;
-- (UIColor *)colorOfDataLabelWithbarChartView:(DBBarChartView *)barChartView ;
-- (UIColor *)colorOfDataNumWithbarChartView:(DBBarChartView *)barChartView ;
+- (UIColor *)barColorOfChartView:(DBBarChartView *)barChartView ;
+- (UIColor *)labelColorOfChartView:(DBBarChartView *)barChartView ;
+- (UIColor *)numberLabelcolorOfChartView:(DBBarChartView *)barChartView ;
 - (CGFloat)widthOfBarCharView:(DBBarChartView *)charView;
 
 @end

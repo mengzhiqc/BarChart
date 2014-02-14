@@ -68,17 +68,17 @@ typedef NS_ENUM(NSInteger, LSBarChartOrientation) {
         NSLog(@"number color change to :%@",self.numberColor);
     }
     
-    if ([self.delegate respondsToSelector:@selector(colorOfGraphicBarWithbarChartView:)]) {
-        self.barColor = [self.delegate colorOfGraphicBarWithbarChartView:self];
+    if ([self.delegate respondsToSelector:@selector(barColorOfChartView:)]) {
+        self.barColor = [self.delegate barColorOfChartView:self];
         NSLog(@"bar color change to :%@",self.barColor);
     }
-    if ([self.delegate respondsToSelector:@selector(colorOfDataLabelWithbarChartView:)]) {
-        self.labelColor = [self.delegate colorOfDataLabelWithbarChartView:self];
+    if ([self.delegate respondsToSelector:@selector(labelColorOfChartView:)]) {
+        self.labelColor = [self.delegate labelColorOfChartView:self];
         NSLog(@"label color change to :%@",self.labelColor);
     }
     
-    if ([self.delegate respondsToSelector:@selector(colorOfDataNumWithbarChartView:)]) {
-        self.numberColor = [self.delegate colorOfDataNumWithbarChartView:self];
+    if ([self.delegate respondsToSelector:@selector(numberLabelcolorOfChartView:)]) {
+        self.numberColor = [self.delegate numberLabelcolorOfChartView:self];
         NSLog(@"number color change to :%@",self.numberColor);
     }
     
